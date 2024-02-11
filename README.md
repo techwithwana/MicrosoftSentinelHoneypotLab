@@ -18,81 +18,74 @@ The setup begins with creating a vulnerable virtual machine in Sentinel to serve
 <br/><br/>
 
 - <b>Honeypot VM Setup:</b> Configured to be highly vulnerable, with external and Windows firewalls turned off (proceed with caution!) to simulate an enticing target for attackers.
-<!--[screenshot: VM configuration settings]-->
 - <b>Microsoft Sentinel Configuration:</b> Set up to ingest logs from the honeypot VM and visualize attack data.
-<!--[screenshot: Azure Sentinel dashboard]-->
-
-<!--<h2>Setup:</h2>
-<p align="center">
-Windows Server 2019: <br/><br />
-<img src="https://res.cloudinary.com/antofon/image/upload/v1707105117/Active%20Directory%20Lab/ovfpxxb0mdob99dhtm10.png" height="60%" width="60%" alt="Windows Server 2019 in Oracle VM"/>
-<br />
-<br />
- Windows 10 Client: <br/><br />
-<img src="https://res.cloudinary.com/antofon/image/upload/v1707105117/Active%20Directory%20Lab/ovfpxxb0mdob99dhtm10.png" height="60%" width="60%" alt="Windows Server 2019 in Oracle VM"/>
-<br />
-<br />
-</p>-->
 
 <h2>Configuration Steps and Management</h2>
 
 - <b>Creating Azure Subscription and VM:</b> Starting with a new Azure subscription and setting up a honeypot VM.
-<!--[screenshot: Azure portal showing the new VM]-->
-- <b>Log Analytics Workspace Setup:</b> Configuring a workspace to ingest logs from the VM.
-<!--[screenshot: Log Analytics Workspace configuration]-->
-- <b>Azure Sentinel Integration:</b> Connecting Azure Sentinel to the workspace to analyze and visualize the data.
-<!--[screenshot: Connecting Azure Sentinel to Log Analytics Workspace]-->
-- <b>PowerShell Scripting for Geographic Data:</b> Utilizing PowerShell to extract IP addresses from failed login attempts, enriching this data with geographic information through an external API, and logging this enriched data for visualization.
-<!--[screenshot: PowerShell script code]-->
-<!--[screenshot: Enriched log data]-->
-- <b>Visualizing Attacks:</b> Using Azure Sentinel to create maps and dashboards that display the origin of cyber attacks in real-time.
-<!--[screenshot: Azure Sentinel attack map]-->
+<p align="center">
+Azure portal showing the new VM: <br/><br />
+<img src="https://res.cloudinary.com/antofon/image/upload/v1707619254/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_6.40.47_PM.png" height="80%" width="80%" alt="Azure portal showing the new VM"/>
 <br />
+<br />
+</p>
 
-<!--<p align="center">
-  Active Directory Domain Creation: <br/><br />
- 
-<img src="https://res.cloudinary.com/antofon/image/upload/v1707105120/Active%20Directory%20Lab/a2cdqnx3ozwsb3cqtrc4.png" height="60%" width="60%" alt="Windows Server 2019 in Oracle VM"/>
-<br /><br />
-Network Config: <br/><br />
-<img src="https://res.cloudinary.com/antofon/image/upload/v1707198488/Active%20Directory%20Lab/kpjk3rnsrununbwpjvlj.png" height="60%" width="60%" alt="Network Configuration"/><br /><br />
-PowerShell Script (Creates 100 users): <br/><br />
-<img src="https://res.cloudinary.com/antofon/image/upload/v1707197684/Active%20Directory%20Lab/dbgoxc7cxvph14qfn5rt.png" height="60%" width="60%" alt="PowerShell script that creates 100 users"/> <br/><br />
-Joining Windows 10 VM to domain: <br/><br />
-<img src="https://res.cloudinary.com/antofon/image/upload/v1707197814/Active%20Directory%20Lab/qyvyjxfpezvhzaafj3h5.png" height="60%" width="60%" alt="Joining Windows 10 VM to domain"/> <br/>
-</p>-->
+- <b>Log Analytics Workspace Setup:</b> Configuring a workspace to ingest logs from the VM.
+<p align="center">
+Connecting Microsoft Sentinel to Log Analytics Workspace: <br/><br />
+<img src="https://res.cloudinary.com/antofon/image/upload/v1707626545/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_8.41.16_PM.png" height="80%" width="80%" alt="Connecting Microsoft Sentinel to Log Analytics Workspace"/>
+<br />
+<br />
+ <img src="https://res.cloudinary.com/antofon/image/upload/v1707626546/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_8.41.51_PM.png" height="80%" width="80%" alt="Connecting Microsoft Sentinel to Log Analytics Workspace"/>
+<br />
+<br />
+ <img src="https://res.cloudinary.com/antofon/image/upload/v1707621196/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_7.04.12_PM.png" height="40%" width="40%" alt="Connecting Microsoft Sentinel to Log Analytics Workspace"/>
+<br />
+<br />
+</p>
+
+- <b>Microsoft Sentinel Integration:</b> Connecting Microsoft Sentinel to the workspace to analyze and visualize the data.
+
+<p align="center">
+Connecting Microsoft Sentinel to Log Analytics Workspace: <br/><br />
+<img src="https://res.cloudinary.com/antofon/image/upload/v1707621231/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_7.09.08_PM.png" height="75%" width="75%" alt="Connecting Microsoft Sentinel to Log Analytics Workspace"/>
+<br />
+<br />
+ <img src="https://res.cloudinary.com/antofon/image/upload/v1707626277/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_8.37.34_PM.png" height="80%" width="80%" alt="Connecting Microsoft Sentinel to Log Analytics Workspace"/>
+</p>
+
+- <b>PowerShell Scripting for Geographic Data:</b> Utilizing PowerShell to extract IP addresses from failed login attempts, enriching this data with geographic information through an external API, and logging this enriched data for visualization.
+
+<!--[screenshot: Enriched log data]-->
+- <b>Visualizing Attacks:</b> Using Microsoft Sentinel to create maps and dashboards that display the origin of cyber attacks in real-time.
+
+<p align="center">
+Microsoft Sentinel attack map:<br/><br/>
+<img src="https://res.cloudinary.com/antofon/image/upload/v1707624917/Microsoft%20Sentinel%20SIEM%20with%20Honeypot%20VM%20Lab/Screenshot_2024-02-10_at_8.14.57_PM.png" height="100%" width="100%" alt="Microsoft Sentinel attack map"/>
+</p>
 
 <h2>Security Hardening Measures</h2>
 
 <p>As I develop this project, I would aim to strengthen its security and data analysis capabilities with several enhancements:
 
 - <b>Isolate the Honeypot VM:</b> Implement tighter network segmentation to further isolate the honeypot, minimizing risk to my network.
-
 - <b>Update Firewall Rules:</b> Introduce dynamic firewall rules based on the latest threat intelligence to proactively block emerging threats.
-
 - <b>Expand Monitoring:</b> Utilize Microsoft Sentinel more extensively with custom queries for deeper insight into subtle attack patterns.
-
 - <b>Selective Patching:</b> Strategically update the honeypot to protect against non-critical vulnerabilities while maintaining its intended vulnerabilities.
-
 - <b>Enhance Administrative Security:</b> Strengthen administrative access with multi-factor authentication to prevent unauthorized access.
-
 - <b>Improve Data Protection:</b> Explore encryption techniques to protect collected data, ensuring it remains secure.
-
 - <b>Ensure Legal and Ethical Compliance:</b> Review and adhere to legal and ethical standards in cybersecurity to ensure the project's integrity.</p>
 
-<h2>Metrics Before and After Configuration</h2>
+<h2>Key Metrics</h2>
 <p>The project's effectiveness was gauged by the ability to capture, enrich, and visualize attack data. Key metrics include:</p>
 
-- <b>Deployment Success:</b> Successful setup of the honeypot VM and integration with Azure Sentinel.
-<!--[screenshot: Deployment overview in Azure portal]-->
+- <b>Deployment Success:</b> Successful setup of the honeypot VM and integration with Microsoft Sentinel.
 - <b>Log Data Enrichment:</b> Successful extraction and enrichment of IP addresses with geographic data using PowerShell.
-<!--[screenshot: Sample enriched log entries]-->
-- <b>Attack Visualization:</b> Effective use of Azure Sentinel to create visual representations of cyber attacks, showcasing their global distribution.
-<!--[screenshot: Dashboard with global attack visualization]-->
+- <b>Attack Visualization:</b> Effective use of Microsoft Sentinel to create visual representations of cyber attacks, showcasing their global distribution.
 - <b>Client Machine Integration:</b> The Windows 10 VM was successfully joined to the domain and could log in using domain credentials.
 
 <h2>Conclusion</h2>
-This project showcases the setup and utilization of Azure Sentinel as a powerful tool for real-time cybersecurity monitoring and defense. By integrating a honeypot VM with Azure Sentinel, I demonstrate a hands-on approach to understanding cyber threats and the importance of SIEM systems in modern cybersecurity practices. This experience is crucial for anyone looking to advance their skills in cybersecurity analysis and defense strategies.
+This project showcases the setup and utilization of Microsoft Sentinel as a powerful tool for real-time cybersecurity monitoring and defense. By integrating a honeypot VM with Microsoft Sentinel, I demonstrate a hands-on approach to understanding cyber threats and the importance of SIEM systems in modern cybersecurity practices. This experience is crucial for anyone looking to advance their skills in cybersecurity analysis and defense strategies.
 <br />
 
 <!--
